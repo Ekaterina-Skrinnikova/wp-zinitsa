@@ -236,3 +236,5 @@ function add_slick_slider_js() {
     <?php
 }
 add_action('wp_footer', 'add_slick_slider_js');
+
+
