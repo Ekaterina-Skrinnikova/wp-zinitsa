@@ -208,9 +208,6 @@ function add_slick_slider_js() {
         infinite: true,
         slidesToShow: 4, 
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // dots: true,
         arrows: true,
         responsive: [
             {
@@ -236,5 +233,31 @@ function add_slick_slider_js() {
     <?php
 }
 add_action('wp_footer', 'add_slick_slider_js');
+
+ function enqueue_scroll_to_top_script() {
+    ?>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            
+              window.onscroll = function() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            };
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'enqueue_scroll_to_top_script');
 
 
