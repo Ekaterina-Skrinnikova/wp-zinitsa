@@ -260,4 +260,10 @@ add_action('wp_footer', 'add_slick_slider_js');
 }
 add_action('wp_footer', 'enqueue_scroll_to_top_script');
 
+//Підключення кастомних стидів
+function enqueue_custom_styles() {
+    wp_enqueue_style('custom-styles', get_template_directory_uri() . '/assets/css/minified/custom-styles.css');
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
+
 

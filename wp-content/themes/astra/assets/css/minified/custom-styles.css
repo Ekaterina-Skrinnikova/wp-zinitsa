@@ -1,0 +1,1023 @@
+:root {
+  --first-accent-color: #009abe;
+  --second-accent-color: #50b849;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --menu-color: #6b7280;
+  --text-color: #22262a;
+  --section-bg-color: #f2f7fa;
+  --footer-bg-color: #22262a;
+  --border-form: #ced4da;
+}
+
+/* ----------header shadow */
+.site-branding.ast-site-identity {
+  padding: 0;
+}
+
+.site-header {
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* --------header submenu */
+.main-header-menu .sub-menu .menu-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.main-header-menu .sub-menu .menu-link:hover,
+.main-header-menu .sub-menu .menu-link:focus {
+  color: var(--second-accent-color);
+}
+
+.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu {
+  margin-top: -20px;
+}
+
+.ast-builder-menu-1 .sub-menu {
+  border-bottom-width: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* ----------header tel */
+
+.site-header-tel {
+  font-size: 16px;
+  color: var(--second-accent-color);
+}
+
+.site-header-tel:hover {
+  font-size: 18px;
+  color: var(--first-accent-color);
+}
+
+/* --------header mob*/
+.main-header-bar-wrap {
+  position: fixed;
+  /*   top: 32px; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: #fff;
+}
+
+.site-content {
+  margin-top: 74px;
+}
+
+/* --------header mob menu */
+.ast-main-header-nav-open.ast-header-break-point
+  .ast-mobile-header-wrap
+  .ast-mobile-header-content {
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  border-right: solid 1px #0000002d;
+  z-index: 100;
+}
+
+.ast-header-break-point .main-header-menu {
+  background-color: #fff;
+}
+
+.ast-header-break-point .main-navigation ul .menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ast-header-break-point .main-navigation ul .menu-item .menu-link {
+  line-height: normal;
+  padding: 0;
+}
+
+.ast-header-break-point
+  .main-header-bar-navigation
+  .menu-item-has-children
+  > .ast-menu-toggle
+  > .ast-icon.icon-arrow {
+  position: absolute;
+  top: -15px;
+  left: -5px;
+}
+.ast-header-break-point
+  .main-header-bar-navigation
+  .menu-item-has-children
+  > .ast-menu-toggle {
+  left: 75px;
+  padding: 2px 0;
+  height: 25px;
+}
+
+.mob-menu {
+  margin-top: 20px;
+}
+
+.mob-menu > div {
+  padding: 16px 0;
+  border-top: 1px solid #0000002d;
+  font-size: 16px;
+}
+
+.mob-menu div p {
+  margin-bottom: 0;
+}
+
+.mob-btn-tel {
+  margin: 10px 0;
+  padding: 10px 35px;
+  color: #32353d;
+  border: 1px solid #32353d;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.ast-header-break-point .main-header-menu .sub-menu {
+  padding: 20px 0;
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  border-top: 3px solid var(--second-accent-color);
+  border-bottom: 3px solid var(--second-accent-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  z-index: 101;
+}
+
+.ast-header-break-point
+  .main-header-menu
+  .sub-menu
+  .menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ast-header-break-point .main-navigation ul .menu-item .menu-link {
+  height: 100%;
+}
+
+.ast-header-break-point .main-header-menu .sub-menu .menu-item .menu-link {
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.ast-header-break-point .main-header-menu .sub-menu .menu-item .menu-link:hover,
+.ast-header-break-point
+  .main-header-menu
+  .sub-menu
+  .menu-item
+  .menu-link:focus {
+  color: var(--second-accent-color);
+}
+
+.ast-header-break-point
+  .main-navigation
+  ul
+  .menu-item
+  .menu-link
+  .icon-arrow:first-of-type {
+  margin-right: 0;
+}
+
+.ast-header-break-point
+  .main-navigation
+  ul
+  .menu-item
+  .menu-link
+  .icon-arrow:first-of-type
+  svg {
+  display: none;
+}
+
+/* ---------hero arrow */
+.site-hero-arrow svg {
+  width: 38px;
+  text-align: center;
+  fill: #fff;
+}
+
+.site-hero-arrow {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  animation: moveArrow 1.5s ease-in-out infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --------section 2 */
+.wp-block-uagb-container .s-2-title {
+  font-size: 28px;
+  margin-top: 30px;
+  text-align: center;
+  color: var(--first-accent-color);
+}
+
+.wp-block-uagb-container .s-2-title:hover,
+.wp-block-uagb-container .s-2-title:focus {
+  color: var(--second-accent-color);
+}
+
+/* -------section contacts */
+@media screen and (min-width: 960px) {
+  .site-contact-link {
+    height: 272px;
+  }
+}
+
+.site-contact-link {
+  width: 622px;
+  padding: 30px;
+  text-align: center;
+  border: solid 1px var(--first-accent-color);
+  border-radius: 15px;
+}
+
+.site-contact-link:hover,
+.site-contact-link:focus {
+  border-color: var(--second-accent-color);
+  color: #333333;
+}
+
+.site-contact-link h4 {
+  margin-top: 0;
+  font-size: 28px;
+  color: var(--first-accent-color);
+}
+
+.site-contact-link p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.uagb-forms-main-form .uagb-forms-main-submit-button-wrap.wp-block-button {
+  width: 100%;
+}
+
+/* -------section FAQ */
+.uagb-block-8a7df007 .uagb-faq-item .uagb-question {
+  text-align: start;
+}
+
+.wp-block-uagb-faq .uagb-faq-content p::before {
+  content: "➤";
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: var(--second-accent-color);
+}
+
+/* ---------slider */
+@media screen and (max-width: 767px) {
+  .slick-track {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 959px) {
+  .slick-track {
+    display: flex;
+    column-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .slick-track {
+    display: flex;
+    column-gap: 40px;
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-caption {
+  padding: 20px;
+  max-width: 260px;
+  height: 200px;
+  row-gap: 10px;
+  text-align: center;
+  background-color: #f2f7fa;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.slider-caption p {
+  margin: 0;
+}
+
+.slick-slider img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 44px;
+  height: 44px;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: solid 3px #000;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus {
+  border-color: var(--first-accent-color);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.slick-prev {
+  left: 40px;
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/arrow-left.png");
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/arrow-left.png");
+}
+
+.slick-next {
+  right: 37px;
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/arrow-right.png");
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/arrow-right.png");
+}
+
+.slick-prev:before {
+  content: "";
+}
+
+.slick-next:before {
+  content: "";
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+/* ---------section form */
+.uagb-form-reacaptcha-error-5bf13667 {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .uagb-block-d3c1d332.uagb-forms__outer-wrap
+    .uagb-block-d3c1d332.uagb-forms__outer-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .uagb-block-5bf13667 .uagb-forms-main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 25px;
+  }
+
+  .uagb-block-5bf13667 .uagb-forms-main-form .uagb-forms-field-set {
+    width: 80%;
+  }
+
+  .form-secondary
+    .uagb-forms-main-form
+    .uagb-forms-main-submit-button-wrap.wp-block-button {
+    width: 100%;
+  }
+
+  .uagb-forms-main-form .uagb-forms-main-submit-button-wrap.wp-block-button {
+    margin-top: 20px;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .uagb-block-5bf13667 .uagb-forms-main-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+  }
+
+  .uagb-forms-main-form .uagb-forms-main-submit-button-wrap.wp-block-button {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 360px;
+  }
+
+  .uagb-block-5bf13667 .uagb-forms-main-form .uagb-forms-field-set {
+    width: 350px;
+  }
+}
+
+/* ---------section news */
+.novyny {
+  margin-top: 32px;
+}
+
+.novyny p {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.novyny .mb {
+  margin-bottom: 25px;
+}
+
+.novyny .site-nov-link {
+  /* 	margin-top: 20px; */
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.site-nov-link:hover,
+.site-nov-link:focus {
+  text-decoration: underline;
+  color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+  .alignright {
+    margin-left: 0;
+  }
+}
+
+/* ------section map icon*/
+.block-editor-block-list__block .uagb-google-map__wrap {
+  padding: 0;
+}
+
+.site-map-list-adress p {
+  margin: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .site-map-list-adress {
+    align-items: center;
+  }
+
+  .site-map-list-adress div {
+    text-align: center;
+  }
+
+  .site-map-list-icon {
+    justify-content: center;
+  }
+}
+
+.site-map-list-icon {
+  margin: 0;
+  column-gap: 2px;
+  list-style: none;
+}
+
+.site-map-list-icon li {
+  border: solid 1px #f2f7fa;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.site-map-list-icon li:hover,
+.site-map-list-icon li:focus {
+  border-color: var(--first-accent-color);
+}
+
+/* --------section footer*/
+
+@media screen and (max-width: 767px) {
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer .site-copyrigth {
+    margin-top: 20px;
+  }
+
+  .site-footer-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .site-footer.mt-50 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer .site-copyrigth {
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
+  .site-footer-list {
+    padding-left: 0;
+    list-style: none;
+    text-align: start;
+  }
+
+  .site-footer.mt-50 {
+    margin-top: 0;
+  }
+}
+
+.site-footer-logo img {
+  margin-bottom: 30px;
+  width: 100px;
+}
+
+.site-footer-list-icon {
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 2px;
+  list-style: none;
+}
+
+.site-footer-list-icon li {
+  border: solid 1px #000;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.site-footer-list-icon li:hover,
+.site-footer-list-icon li:focus {
+  border-color: #fff;
+}
+
+.site-footer p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.site-footer-list li a {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.site-footer-list li a:hover,
+.site-footer-list li a:focus {
+  color: var(--second-accent-color);
+}
+
+.site-footer-list.site-footer-list-padding {
+  padding-bottom: 50px;
+}
+
+.site-above-footer-wrap[data-section="section-above-footer-builder"] {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* -------page price*/
+@media screen and (max-width: 767px) {
+  .site-table-price {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-table-price {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .site-table-price {
+    font-size: 20px;
+  }
+}
+
+.site-table-price {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.site-table-price th {
+  height: 48px;
+  border: 0;
+  border-bottom: solid 1px #cecece;
+  color: var(--text-color);
+}
+
+.site-table-price th span {
+  text-align: start;
+  color: #e03e2d;
+}
+
+.site-table-price th p {
+  margin-bottom: 0;
+  margin-left: 0;
+  text-align: start;
+}
+
+.site-table-price-th-1 .site-table-span {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.site-table-price-th-1 {
+  padding-left: 0;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  text-align: start;
+}
+
+.site-table-price-th-2 {
+  padding-right: 0;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  width: 100px;
+  text-align: end;
+}
+
+/* ------page about us*/
+
+.wrapper-poslugy {
+  padding-top: 45px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/fon.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wrapper-poslugy .wrapper-poslugi-block {
+  max-width: 1200px;
+}
+
+.wrapper-first,
+.wrapper-second {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper-description-text-f {
+  max-width: 980px;
+}
+
+.wrapper-description h4 {
+  margin-bottom: 0;
+}
+
+.wrapper-description-text {
+  max-width: 530px;
+}
+
+.wrapper-description-text-f p,
+.wrapper-description-text-f ul,
+.wrapper-description-text p,
+.wrapper-description-text ul {
+  margin-bottom: 0;
+}
+
+.wrapper-description-text-f ul {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 530px) {
+  .wrapper-description,
+  .wrapper-img {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .wrapper-description,
+  .wrapper-img {
+    max-width: 530px;
+  }
+}
+
+.wrapper-img img {
+  border-radius: 12px;
+}
+
+.wrapper-second-fon {
+  width: 100vw;
+  position: relative;
+  background-color: #f2f7fa;
+}
+
+/* -------page poslugi*/
+/*header section poslugy*/
+
+.poslugy.title {
+  margin-top: 56px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* animation h section poslugy*/
+.poslugy.title {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translatey(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+/*block list with tick mark*/
+.list {
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+  font-size: 18px;
+  list-style: none;
+}
+
+.info {
+  width: 100%;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.info ul {
+  margin-left: 30px;
+}
+
+body
+  .ast-container
+  .wp-block-uagb-container
+  > .uagb-container-inner-blocks-wrap
+  ol {
+  margin-left: 30px;
+}
+
+.info h5,
+.info p,
+.info ul {
+  margin-bottom: 0;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.c-gap {
+  column-gap: 30px;
+}
+
+.r-gap {
+  row-gap: 16px;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+}
+
+.aling-center {
+  align-items: center;
+}
+
+.blue {
+  color: var(--first-accent-color);
+}
+
+.green {
+  color: var(--second-accent-color);
+}
+
+.red {
+  color: #d12023;
+}
+
+/* -------block fon*/
+.wrapper-fon {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-fon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.fon-diagnost {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/diagnost-b.jpg");
+}
+
+.fon-katarakta {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/katarakta-b.jpg");
+}
+
+.fon-glaukoma {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/glaukoma-b.jpg");
+}
+
+.fon-astygmatyzm {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/astigmatizm-b.jpg");
+}
+
+.fon-astygmatyzm {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/astigmatizm-b.jpg");
+}
+
+.fon-miopiya {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/miopiya-b.jpg");
+}
+
+.fon-miopiya {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/miopiya-b.jpg");
+}
+
+.fon-zahvor-sitkivky {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/zahvor-sitkivki-b.jpg");
+}
+
+.fon-paragon {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/paragon-b.jpg");
+}
+
+.fon-retin {
+  background-image: url("https://zinitsa.local/wp-content/uploads/2024/10/retin-b.jpg");
+}
+
+.wrapper-banner {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper-banner h2 {
+    font-size: 30px;
+  }
+}
+
+.wrapper-banner h2 {
+  text-align: center;
+  margin-bottom: 68px;
+  color: #fff;
+}
+
+/* -----section poslugy btn "запис на прийом"*/
+.btn {
+  padding: 20px 60px;
+  text-align: center;
+}
+
+.a-btn {
+  padding: 20px 60px;
+  min-width: 100px;
+  border: solid 2px var(--second-accent-color);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.a-btn:hover,
+.a-btn:focus {
+  color: #fff;
+  background-color: var(--first-accent-color);
+}
+
+/*--section diagnostyka-zoru */
+.inner-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.inner-list li::before {
+  content: "-";
+}
+
+.ul-margin-left {
+  margin-left: 0;
+}
+
+/* -------button up*/
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 8px;
+  width: 55px;
+  height: 63px;
+  border: 1px solid var(--second-accent-color);
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--second-accent-color);
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  background-color: var(--first-accent-color);
+  color: #fff;
+}
+
+/*section novyny pages links  */
+.novyny-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.novyny-links p {
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+.novyny-links .p-second {
+  margin-bottom: 16px;
+}
+
+.novyny-links img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
